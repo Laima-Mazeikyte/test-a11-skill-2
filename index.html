@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Rose Bouquet | Bloom & Petal Artisan Florals</title>
+  <meta name="description" content="Stunning Valentine's Day Rose Bouquet featuring 24 premium long-stem red roses. Perfect for expressing your love. Free delivery on orders over $50.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* CSS Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* Green Theme Colors - WCAG AA Compliant */
+      --green-900: #14532d;
+      --green-800: #166534;
+      --green-700: #15803d;
+      --green-600: #16a34a;
+      --green-500: #22c55e;
+      --green-400: #4ade80;
+      --green-300: #86efac;
+      --green-200: #bbf7d0;
+      --green-100: #dcfce7;
+      --green-50: #f0fdf4;
+      
+      /* Neutral Colors */
+      --gray-900: #111827;
+      --gray-800: #1f2937;
+      --gray-700: #374151;
+      --gray-600: #4b5563;
+      --gray-500: #6b7280;
+      --gray-400: #9ca3af;
+      --gray-300: #d1d5db;
+      --gray-200: #e5e7eb;
+      --gray-100: #f3f4f6;
+      --gray-50: #f9fafb;
+      --white: #ffffff;
+      
+      /* Valentine's Accent */
+      --rose-600: #e11d48;
+      --rose-500: #f43f5e;
+      --rose-100: #ffe4e6;
+      
+      /* Semantic Colors */
+      --text-primary: var(--gray-900);
+      --text-secondary: var(--gray-600);
+      --text-muted: #595959; /* 7:1 contrast on white */
+      --border-color: var(--gray-300);
+      --focus-ring: var(--green-700);
+      
+      /* 8-point Grid System */
+      --space-1: 8px;
+      --space-2: 16px;
+      --space-3: 24px;
+      --space-4: 32px;
+      --space-5: 40px;
+      --space-6: 48px;
+      --space-7: 56px;
+      --space-8: 64px;
+      --space-9: 72px;
+      --space-10: 80px;
+      
+      /* Typography */
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      
+      /* Transitions */
+      --transition-fast: 150ms ease;
+      --transition-normal: 250ms ease;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-primary);
+      background-color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: var(--space-2);
+      padding: var(--space-1) var(--space-2);
+      background: var(--green-800);
+      color: var(--white);
+      font-weight: 600;
+      text-decoration: none;
+      z-index: 1000;
+      border-radius: 0 0 4px 4px;
+    }
+
+    .skip-link:focus {
+      top: 0;
+      outline: 3px solid var(--green-500);
+      outline-offset: 2px;
+    }
+
+    /* Visually Hidden (Screen Reader Only) */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Focus Styles */
+    :focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
+
+    :focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    /* Header */
+    .header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border-color);
+      padding: var(--space-2) var(--space-3);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header__inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-3);
+    }
+
+    .logo {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--green-800);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+    }
+
+    .logo:hover {
+      color: var(--green-700);
+    }
+
+    .logo svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      gap: var(--space-4);
+    }
+
+    .nav-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 500;
+      padding: var(--space-1) 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color var(--transition-fast);
+    }
+
+    .nav-link:hover,
+    .nav-link[aria-current="page"] {
+      border-color: var(--green-600);
+      color: var(--green-800);
+    }
+
+    /* Promo Banner */
+    .promo-banner {
+      background: linear-gradient(135deg, var(--rose-600) 0%, var(--rose-500) 100%);
+      color: var(--white);
+      text-align: center;
+      padding: var(--space-2) var(--space-3);
+    }
+
+    .promo-banner__text {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-1);
+      flex-wrap: wrap;
+    }
+
+    .promo-banner__code {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 2px var(--space-1);
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: var(--space-5) var(--space-3);
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      margin-bottom: var(--space-4);
+    }
+
+    .breadcrumb__list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: var(--space-1);
+      font-size: 0.875rem;
+    }
+
+    .breadcrumb__item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+    }
+
+    .breadcrumb__item:not(:last-child)::after {
+      content: "/";
+      color: var(--gray-400);
+    }
+
+    .breadcrumb__link {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+
+    .breadcrumb__link:hover {
+      color: var(--green-700);
+      text-decoration: underline;
+    }
+
+    .breadcrumb__current {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* Product Layout */
+    .product {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+
+    @media (min-width: 1024px) {
+      .product {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-8);
+      }
+    }
+
+    /* Image Carousel */
+    .carousel {
+      position: relative;
+    }
+
+    .carousel__main {
+      position: relative;
+      aspect-ratio: 1;
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    .carousel__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .carousel__image.active {
+      display: block;
+    }
+
+    .carousel__nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 var(--space-2);
+      pointer-events: none;
+    }
+
+    .carousel__btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      pointer-events: auto;
+      transition: all var(--transition-fast);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel__btn:hover {
+      background: var(--green-50);
+      border-color: var(--green-600);
+    }
+
+    .carousel__btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .carousel__btn svg {
+      width: 24px;
+      height: 24px;
+      color: var(--gray-700);
+    }
+
+    .carousel__thumbnails {
+      display: flex;
+      gap: var(--space-2);
+      margin-top: var(--space-2);
+      overflow-x: auto;
+      padding: var(--space-1) 0;
+    }
+
+    .carousel__thumb {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border-color var(--transition-fast);
+      flex-shrink: 0;
+      background: none;
+      padding: 0;
+    }
+
+    .carousel__thumb:hover {
+      border-color: var(--green-400);
+    }
+
+    .carousel__thumb[aria-selected="true"] {
+      border-color: var(--green-600);
+    }
+
+    .carousel__thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel__status {
+      text-align: center;
+      margin-top: var(--space-2);
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+    }
+
+    /* Product Info */
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+
+    .product-info__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-1);
+      background: var(--rose-100);
+      color: var(--rose-600);
+      padding: var(--space-1) var(--space-2);
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      width: fit-content;
+    }
+
+    .product-info__badge svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .product-info__title {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+
+    .product-info__rating {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .stars {
+      display: flex;
+      gap: 2px;
+    }
+
+    .stars svg {
+      width: 20px;
+      height: 20px;
+      fill: #fbbf24;
+    }
+
+    .stars svg.empty {
+      fill: var(--gray-300);
+    }
+
+    .rating-text {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+
+    .rating-text a {
+      color: var(--green-700);
+      text-decoration: underline;
+    }
+
+    .product-info__price {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+    }
+
+    .price-current {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--green-800);
+    }
+
+    .price-original {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+
+    .price-discount {
+      background: var(--green-100);
+      color: var(--green-800);
+      padding: 2px var(--space-1);
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .product-info__description {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* Quantity Picker */
+    .quantity-picker {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+
+    .quantity-picker__label {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .quantity-picker__controls {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .quantity-picker__input-group {
+      display: flex;
+      align-items: center;
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .quantity-picker__btn {
+      width: 48px;
+      height: 48px;
+      background: var(--gray-50);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--transition-fast);
+    }
+
+    .quantity-picker__btn:hover:not(:disabled) {
+      background: var(--green-100);
+    }
+
+    .quantity-picker__btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .quantity-picker__btn svg {
+      width: 20px;
+      height: 20px;
+      color: var(--gray-700);
+    }
+
+    .quantity-picker__input {
+      width: 64px;
+      height: 48px;
+      border: none;
+      text-align: center;
+      font-size: 1.125rem;
+      font-weight: 600;
+      font-family: inherit;
+      -moz-appearance: textfield;
+    }
+
+    .quantity-picker__input::-webkit-outer-spin-button,
+    .quantity-picker__input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .quantity-picker__total {
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+
+    .quantity-picker__total strong {
+      color: var(--green-800);
+      font-size: 1.25rem;
+    }
+
+    /* Action Buttons */
+    .product-actions {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-1);
+      padding: var(--space-2) var(--space-3);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      text-decoration: none;
+      border: 2px solid transparent;
+    }
+
+    .btn--primary {
+      background: var(--green-700);
+      color: var(--white);
+      border-color: var(--green-700);
+    }
+
+    .btn--primary:hover {
+      background: var(--green-800);
+      border-color: var(--green-800);
+    }
+
+    .btn--secondary {
+      background: var(--white);
+      color: var(--green-700);
+      border-color: var(--green-700);
+    }
+
+    .btn--secondary:hover {
+      background: var(--green-50);
+    }
+
+    .btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Product Details Table */
+    .product-table {
+      margin-top: var(--space-4);
+    }
+
+    .product-table__title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: var(--space-2);
+    }
+
+    .product-table table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9375rem;
+    }
+
+    .product-table caption {
+      text-align: left;
+      font-weight: 600;
+      padding: var(--space-2) 0;
+      color: var(--text-primary);
+    }
+
+    .product-table th,
+    .product-table td {
+      padding: var(--space-2);
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .product-table th {
+      background: var(--green-50);
+      font-weight: 600;
+      color: var(--gray-700);
+      width: 40%;
+    }
+
+    .product-table td {
+      color: var(--text-primary);
+    }
+
+    .product-table tr:hover td {
+      background: var(--gray-50);
+    }
+
+    /* Accordion */
+    .accordion {
+      margin-top: var(--space-6);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .accordion__item {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .accordion__item:last-child {
+      border-bottom: none;
+    }
+
+    .accordion__trigger {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--space-3);
+      background: var(--white);
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-align: left;
+      transition: background var(--transition-fast);
+    }
+
+    .accordion__trigger:hover {
+      background: var(--green-50);
+    }
+
+    .accordion__trigger[aria-expanded="true"] {
+      background: var(--green-50);
+    }
+
+    .accordion__icon {
+      width: 24px;
+      height: 24px;
+      transition: transform var(--transition-normal);
+      color: var(--green-700);
+    }
+
+    .accordion__trigger[aria-expanded="true"] .accordion__icon {
+      transform: rotate(180deg);
+    }
+
+    .accordion__content {
+      padding: 0 var(--space-3) var(--space-3);
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .accordion__content[hidden] {
+      display: none;
+    }
+
+    .accordion__content ul {
+      margin-top: var(--space-2);
+      padding-left: var(--space-3);
+    }
+
+    .accordion__content li {
+      margin-bottom: var(--space-1);
+    }
+
+    /* Contact Form */
+    .contact-form {
+      margin-top: var(--space-8);
+      background: var(--green-50);
+      padding: var(--space-5);
+      border-radius: 16px;
+    }
+
+    .contact-form__header {
+      text-align: center;
+      margin-bottom: var(--space-4);
+    }
+
+    .contact-form__title {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--green-800);
+      margin-bottom: var(--space-1);
+    }
+
+    .contact-form__subtitle {
+      color: var(--text-secondary);
+    }
+
+    .form {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .form__row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-3);
+      margin-bottom: var(--space-3);
+    }
+
+    @media (min-width: 640px) {
+      .form__row--two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .form__field {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+
+    .form__label {
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .form__label--required::after {
+      content: " *";
+      color: var(--rose-600);
+    }
+
+    .form__input,
+    .form__select,
+    .form__textarea {
+      padding: var(--space-2);
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--text-primary);
+      background: var(--white);
+      transition: border-color var(--transition-fast);
+    }
+
+    .form__input:hover,
+    .form__select:hover,
+    .form__textarea:hover {
+      border-color: var(--gray-400);
+    }
+
+    .form__input:focus,
+    .form__select:focus,
+    .form__textarea:focus {
+      border-color: var(--green-600);
+      outline: none;
+      box-shadow: 0 0 0 3px var(--green-100);
+    }
+
+    .form__input::placeholder,
+    .form__textarea::placeholder {
+      color: #767676; /* 4.5:1 contrast */
+    }
+
+    .form__hint {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .form__textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form__checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+
+    .form__checkbox {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-2);
+    }
+
+    .form__checkbox input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      accent-color: var(--green-600);
+      cursor: pointer;
+    }
+
+    .form__checkbox label {
+      cursor: pointer;
+      color: var(--text-primary);
+    }
+
+    .form__actions {
+      margin-top: var(--space-4);
+      display: flex;
+      justify-content: center;
+    }
+
+    .form__error {
+      color: var(--rose-600);
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+    }
+
+    .form__error svg {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .form__field--error .form__input,
+    .form__field--error .form__textarea,
+    .form__field--error .form__select {
+      border-color: var(--rose-600);
+    }
+
+    /* Live Region for Announcements */
+    .live-region {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--green-900);
+      color: var(--green-100);
+      padding: var(--space-6) var(--space-3);
+      margin-top: var(--space-10);
+    }
+
+    .footer__inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--space-5);
+    }
+
+    .footer__section h3 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: var(--space-2);
+    }
+
+    .footer__list {
+      list-style: none;
+    }
+
+    .footer__list li {
+      margin-bottom: var(--space-1);
+    }
+
+    .footer__list a {
+      color: var(--green-200);
+      text-decoration: none;
+    }
+
+    .footer__list a:hover {
+      color: var(--white);
+      text-decoration: underline;
+    }
+
+    .footer__bottom {
+      max-width: 1280px;
+      margin: var(--space-5) auto 0;
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--green-800);
+      text-align: center;
+      color: var(--green-300);
+      font-size: 0.875rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-info__title {
+        font-size: 1.75rem;
+      }
+
+      .price-current {
+        font-size: 1.5rem;
+      }
+
+      .nav-list {
+        display: none;
+      }
+
+      .contact-form {
+        padding: var(--space-3);
+      }
+
+      .contact-form__title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Promotional Banner -->
+  <div class="promo-banner" role="banner">
+    <p class="promo-banner__text">
+      <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      Valentine's Day Special! 20% OFF with code <span class="promo-banner__code">LOVE2026</span> — Free delivery on orders over $50
+    </p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="/" class="logo" aria-label="Bloom & Petal - Home">
+        <svg aria-hidden="true" viewBox="0 0 32 32" fill="currentColor">
+          <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 4c2.5 0 4.5 3 4.5 7s-2 5-4.5 5-4.5-1-4.5-5 2-7 4.5-7zm-6 10c0-2 1.5-3 3-3s2 1 2 3c0 4-3 6-5 6-1 0-2-1-2-3 0-1 1-2 2-3zm12 0c1 1 2 2 2 3 0 2-1 3-2 3-2 0-5-2-5-6 0-2 0.5-3 2-3s3 1 3 3z"/>
+        </svg>
+        Bloom & Petal
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="/shop" class="nav-link">Shop</a></li>
+          <li><a href="/occasions" class="nav-link">Occasions</a></li>
+          <li><a href="/valentines" class="nav-link" aria-current="page">Valentine's Day</a></li>
+          <li><a href="/about" class="nav-link">About</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="btn btn--secondary" aria-label="Shopping cart, 0 items">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span aria-hidden="true">Cart (0)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" tabindex="-1">
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a href="/" class="breadcrumb__link">Home</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="/shop" class="breadcrumb__link">Shop</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="/valentines" class="breadcrumb__link">Valentine's Day</a>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__current" aria-current="page">Valentine's Rose Bouquet</span>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Product Section -->
+    <article class="product" itemscope itemtype="https://schema.org/Product">
+      <!-- Image Carousel -->
+      <section class="carousel" aria-label="Product images">
+        <div class="carousel__main" role="group" aria-roledescription="carousel" aria-label="Product image gallery">
+          <img 
+            src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=800&h=800&fit=crop&q=80" 
+            alt="Valentine's Rose Bouquet - Luxurious arrangement of 24 premium long-stem red roses with eucalyptus accents, wrapped in elegant cream paper with satin ribbon" 
+            class="carousel__image active"
+            id="slide-1"
+            itemprop="image"
+          >
+          <img 
+            src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?w=800&h=800&fit=crop&q=80" 
+            alt="Close-up detail of deep red rose petals showing velvety texture and rich crimson color" 
+            class="carousel__image"
+            id="slide-2"
+          >
+          <img 
+            src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=800&h=800&fit=crop&q=80" 
+            alt="Valentine's bouquet displayed in a glass vase on a white marble surface, showing the full height and arrangement" 
+            class="carousel__image"
+            id="slide-3"
+          >
+          <img 
+            src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=800&fit=crop&q=80" 
+            alt="Gift presentation view showing bouquet in premium gift box with tissue paper and handwritten card" 
+            class="carousel__image"
+            id="slide-4"
+          >
+          <img 
+            src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=800&h=800&fit=crop&q=80" 
+            alt="Overhead view of the rose bouquet highlighting the spiral arrangement pattern and greenery accents" 
+            class="carousel__image"
+            id="slide-5"
+          >
+
+          <div class="carousel__nav">
+            <button 
+              type="button" 
+              class="carousel__btn carousel__btn--prev" 
+              aria-label="Previous image"
+              id="carousel-prev"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button 
+              type="button" 
+              class="carousel__btn carousel__btn--next" 
+              aria-label="Next image"
+              id="carousel-next"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel__thumbnails" role="tablist" aria-label="Product image thumbnails">
+          <button 
+            type="button" 
+            role="tab" 
+            class="carousel__thumb" 
+            aria-selected="true" 
+            aria-controls="slide-1"
+            aria-label="View main bouquet image"
+            data-slide="0"
+          >
+            <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?w=160&h=160&fit=crop&q=80" alt="">
+          </button>
+          <button 
+            type="button" 
+            role="tab" 
+            class="carousel__thumb" 
+            aria-selected="false" 
+            aria-controls="slide-2"
+            aria-label="View rose petal close-up"
+            data-slide="1"
+            tabindex="-1"
+          >
+            <img src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?w=160&h=160&fit=crop&q=80" alt="">
+          </button>
+          <button 
+            type="button" 
+            role="tab" 
+            class="carousel__thumb" 
+            aria-selected="false" 
+            aria-controls="slide-3"
+            aria-label="View bouquet in vase"
+            data-slide="2"
+            tabindex="-1"
+          >
+            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=160&h=160&fit=crop&q=80" alt="">
+          </button>
+          <button 
+            type="button" 
+            role="tab" 
+            class="carousel__thumb" 
+            aria-selected="false" 
+            aria-controls="slide-4"
+            aria-label="View gift presentation"
+            data-slide="3"
+            tabindex="-1"
+          >
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=160&h=160&fit=crop&q=80" alt="">
+          </button>
+          <button 
+            type="button" 
+            role="tab" 
+            class="carousel__thumb" 
+            aria-selected="false" 
+            aria-controls="slide-5"
+            aria-label="View overhead arrangement"
+            data-slide="4"
+            tabindex="-1"
+          >
+            <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=160&h=160&fit=crop&q=80" alt="">
+          </button>
+        </div>
+
+        <p class="carousel__status" role="status" aria-live="polite" id="carousel-status">
+          Image 1 of 5
+        </p>
+      </section>
+
+      <!-- Product Info -->
+      <div class="product-info">
+        <span class="product-info__badge">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          Valentine's Day Special
+        </span>
+
+        <h1 class="product-info__title" itemprop="name">Valentine's Rose Bouquet</h1>
+
+        <div class="product-info__rating">
+          <div class="stars" role="img" aria-label="4.8 out of 5 stars">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <span class="rating-text">
+            4.8 (128 reviews) · <a href="#reviews">Read reviews</a>
+          </span>
+        </div>
+
+        <div class="product-info__price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <span class="price-current" itemprop="price" content="79.99">$79.99</span>
+          <span class="price-original">$99.99</span>
+          <span class="price-discount">Save 20%</span>
+          <meta itemprop="priceCurrency" content="USD">
+          <link itemprop="availability" href="https://schema.org/InStock">
+        </div>
+
+        <p class="product-info__description" itemprop="description">
+          Express your deepest love with our stunning Valentine's Rose Bouquet. Featuring 24 premium long-stem red roses, carefully hand-selected from Ecuador's finest rose farms, this breathtaking arrangement is artfully designed with fresh eucalyptus and delicate baby's breath. Each bouquet is wrapped in elegant cream paper and tied with a luxurious satin ribbon.
+        </p>
+
+        <!-- Quantity Picker -->
+        <div class="quantity-picker">
+          <label class="quantity-picker__label" for="quantity" id="quantity-label">Quantity</label>
+          <div class="quantity-picker__controls">
+            <div class="quantity-picker__input-group">
+              <button 
+                type="button" 
+                class="quantity-picker__btn" 
+                id="quantity-decrease"
+                aria-label="Decrease quantity"
+                aria-controls="quantity"
+              >
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+              <input 
+                type="number" 
+                id="quantity" 
+                name="quantity" 
+                class="quantity-picker__input"
+                value="1" 
+                min="1" 
+                max="10"
+                aria-labelledby="quantity-label"
+                aria-describedby="quantity-hint"
+              >
+              <button 
+                type="button" 
+                class="quantity-picker__btn" 
+                id="quantity-increase"
+                aria-label="Increase quantity"
+                aria-controls="quantity"
+              >
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </button>
+            </div>
+            <span class="quantity-picker__total" id="quantity-hint">
+              Total: <strong id="total-price">$79.99</strong>
+            </span>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="product-actions">
+          <button type="button" class="btn btn--primary" id="add-to-cart">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            Add to Cart
+          </button>
+          <button type="button" class="btn btn--secondary" id="add-to-wishlist">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            Add to Wishlist
+          </button>
+        </div>
+
+        <!-- Product Details Table -->
+        <div class="product-table">
+          <h2 class="product-table__title">Product Details</h2>
+          <table>
+            <caption class="visually-hidden">Specifications for Valentine's Rose Bouquet</caption>
+            <thead class="visually-hidden">
+              <tr>
+                <th scope="col">Specification</th>
+                <th scope="col">Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Number of Stems</th>
+                <td>24 long-stem roses</td>
+              </tr>
+              <tr>
+                <th scope="row">Rose Variety</th>
+                <td>Ecuadorian Freedom Roses</td>
+              </tr>
+              <tr>
+                <th scope="row">Color</th>
+                <td>Deep crimson red</td>
+              </tr>
+              <tr>
+                <th scope="row">Stem Length</th>
+                <td>50-60 cm (20-24 inches)</td>
+              </tr>
+              <tr>
+                <th scope="row">Accents</th>
+                <td>Fresh eucalyptus, baby's breath</td>
+              </tr>
+              <tr>
+                <th scope="row">Vase Life</th>
+                <td>7-10 days with proper care</td>
+              </tr>
+              <tr>
+                <th scope="row">Wrapping</th>
+                <td>Premium cream paper with satin ribbon</td>
+              </tr>
+              <tr>
+                <th scope="row">Gift Card</th>
+                <td>Complimentary handwritten card included</td>
+              </tr>
+              <tr>
+                <th scope="row">Delivery</th>
+                <td>Same-day delivery available</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion" id="product-accordion">
+          <div class="accordion__item">
+            <h3>
+              <button 
+                type="button" 
+                class="accordion__trigger" 
+                aria-expanded="true" 
+                aria-controls="accordion-panel-1"
+                id="accordion-trigger-1"
+              >
+                <span>Care Instructions</span>
+                <svg class="accordion__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </h3>
+            <div 
+              id="accordion-panel-1" 
+              class="accordion__content" 
+              role="region" 
+              aria-labelledby="accordion-trigger-1"
+            >
+              <p>Follow these simple steps to keep your roses fresh and beautiful for longer:</p>
+              <ul>
+                <li>Cut stems at a 45-degree angle before placing in water</li>
+                <li>Use the included flower food packet in fresh, room-temperature water</li>
+                <li>Change water every 2-3 days and re-cut stems</li>
+                <li>Keep away from direct sunlight, heat sources, and fruit</li>
+                <li>Remove any leaves below the waterline to prevent bacterial growth</li>
+                <li>Mist petals lightly with water for added freshness</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button 
+                type="button" 
+                class="accordion__trigger" 
+                aria-expanded="false" 
+                aria-controls="accordion-panel-2"
+                id="accordion-trigger-2"
+              >
+                <span>Delivery Information</span>
+                <svg class="accordion__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </h3>
+            <div 
+              id="accordion-panel-2" 
+              class="accordion__content" 
+              role="region" 
+              aria-labelledby="accordion-trigger-2"
+              hidden
+            >
+              <p>We offer flexible delivery options to ensure your flowers arrive fresh:</p>
+              <ul>
+                <li><strong>Same-Day Delivery:</strong> Order by 2 PM for delivery today (select areas)</li>
+                <li><strong>Next-Day Delivery:</strong> Free on orders over $50</li>
+                <li><strong>Scheduled Delivery:</strong> Choose your preferred date up to 14 days ahead</li>
+                <li><strong>Valentine's Day:</strong> Extended delivery hours from 7 AM - 9 PM</li>
+              </ul>
+              <p>All deliveries include real-time tracking and a delivery confirmation photo.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button 
+                type="button" 
+                class="accordion__trigger" 
+                aria-expanded="false" 
+                aria-controls="accordion-panel-3"
+                id="accordion-trigger-3"
+              >
+                <span>Our Freshness Guarantee</span>
+                <svg class="accordion__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </h3>
+            <div 
+              id="accordion-panel-3" 
+              class="accordion__content" 
+              role="region" 
+              aria-labelledby="accordion-trigger-3"
+              hidden
+            >
+              <p>We stand behind the quality of every bouquet we create:</p>
+              <ul>
+                <li>100% satisfaction guarantee on all orders</li>
+                <li>Flowers sourced directly from trusted farms</li>
+                <li>Cut-to-order to ensure maximum freshness</li>
+                <li>Temperature-controlled delivery vehicles</li>
+                <li>Full refund or replacement if you're not completely satisfied</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <h3>
+              <button 
+                type="button" 
+                class="accordion__trigger" 
+                aria-expanded="false" 
+                aria-controls="accordion-panel-4"
+                id="accordion-trigger-4"
+              >
+                <span>Sustainability</span>
+                <svg class="accordion__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+            </h3>
+            <div 
+              id="accordion-panel-4" 
+              class="accordion__content" 
+              role="region" 
+              aria-labelledby="accordion-trigger-4"
+              hidden
+            >
+              <p>We're committed to sustainable floristry:</p>
+              <ul>
+                <li>Partnering with Rainforest Alliance certified farms</li>
+                <li>100% recyclable and compostable packaging</li>
+                <li>Carbon-neutral delivery options available</li>
+                <li>Supporting fair wages for farm workers</li>
+                <li>Water-efficient growing practices</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form" aria-labelledby="contact-form-title">
+      <div class="contact-form__header">
+        <h2 class="contact-form__title" id="contact-form-title">Have a Special Request?</h2>
+        <p class="contact-form__subtitle">Our floral designers can create a custom arrangement just for you.</p>
+      </div>
+
+      <form class="form" id="inquiry-form" novalidate>
+        <div class="form__row form__row--two-col">
+          <div class="form__field">
+            <label for="first-name" class="form__label form__label--required">First Name</label>
+            <input 
+              type="text" 
+              id="first-name" 
+              name="firstName" 
+              class="form__input"
+              required
+              autocomplete="given-name"
+              aria-describedby="first-name-error"
+            >
+            <span id="first-name-error" class="form__error" hidden>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+              Please enter your first name
+            </span>
+          </div>
+
+          <div class="form__field">
+            <label for="last-name" class="form__label form__label--required">Last Name</label>
+            <input 
+              type="text" 
+              id="last-name" 
+              name="lastName" 
+              class="form__input"
+              required
+              autocomplete="family-name"
+              aria-describedby="last-name-error"
+            >
+            <span id="last-name-error" class="form__error" hidden>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+              Please enter your last name
+            </span>
+          </div>
+        </div>
+
+        <div class="form__row form__row--two-col">
+          <div class="form__field">
+            <label for="email" class="form__label form__label--required">Email Address</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form__input"
+              required
+              autocomplete="email"
+              aria-describedby="email-hint email-error"
+            >
+            <span id="email-hint" class="form__hint">We'll use this to respond to your inquiry</span>
+            <span id="email-error" class="form__error" hidden>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+              Please enter a valid email address
+            </span>
+          </div>
+
+          <div class="form__field">
+            <label for="phone" class="form__label">Phone Number</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              class="form__input"
+              autocomplete="tel"
+              aria-describedby="phone-hint"
+            >
+            <span id="phone-hint" class="form__hint">Optional - for urgent inquiries</span>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__field">
+            <label for="occasion" class="form__label">Occasion</label>
+            <select id="occasion" name="occasion" class="form__select">
+              <option value="">Select an occasion</option>
+              <option value="valentines">Valentine's Day</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="birthday">Birthday</option>
+              <option value="wedding">Wedding</option>
+              <option value="sympathy">Sympathy</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__field">
+            <label for="message" class="form__label form__label--required">Your Message</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              class="form__textarea"
+              required
+              maxlength="1000"
+              aria-describedby="message-hint message-error"
+              placeholder="Tell us about your vision - preferred flowers, colors, budget, or any special requirements..."
+            ></textarea>
+            <span id="message-hint" class="form__hint">Maximum 1000 characters</span>
+            <span id="message-error" class="form__error" hidden>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+              Please describe your custom request
+            </span>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <fieldset class="form__checkbox-group">
+            <legend class="visually-hidden">Communication preferences</legend>
+            <div class="form__checkbox">
+              <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+              <label for="newsletter">Subscribe to our newsletter for exclusive offers and floral inspiration</label>
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" id="terms" name="terms" required aria-describedby="terms-error">
+              <label for="terms">I agree to the <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a> <span aria-hidden="true">*</span></label>
+            </div>
+            <span id="terms-error" class="form__error" hidden>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+              You must agree to the terms to continue
+            </span>
+          </fieldset>
+        </div>
+
+        <div class="form__actions">
+          <button type="submit" class="btn btn--primary">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            Send Inquiry
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Live Region for Announcements -->
+    <div class="live-region" aria-live="polite" aria-atomic="true" id="announcements"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__section">
+        <h3>Shop</h3>
+        <ul class="footer__list">
+          <li><a href="/shop/roses">Roses</a></li>
+          <li><a href="/shop/bouquets">Bouquets</a></li>
+          <li><a href="/shop/arrangements">Arrangements</a></li>
+          <li><a href="/shop/plants">Plants</a></li>
+          <li><a href="/shop/gifts">Gift Sets</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__section">
+        <h3>Occasions</h3>
+        <ul class="footer__list">
+          <li><a href="/occasions/valentines">Valentine's Day</a></li>
+          <li><a href="/occasions/birthday">Birthday</a></li>
+          <li><a href="/occasions/anniversary">Anniversary</a></li>
+          <li><a href="/occasions/sympathy">Sympathy</a></li>
+          <li><a href="/occasions/wedding">Wedding</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__section">
+        <h3>Customer Care</h3>
+        <ul class="footer__list">
+          <li><a href="/delivery">Delivery Information</a></li>
+          <li><a href="/returns">Returns & Refunds</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/track">Track Your Order</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__section">
+        <h3>About Us</h3>
+        <ul class="footer__list">
+          <li><a href="/about">Our Story</a></li>
+          <li><a href="/sustainability">Sustainability</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="/press">Press</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Bloom & Petal Artisan Florals. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ===== Carousel Functionality =====
+    const carousel = {
+      currentSlide: 0,
+      totalSlides: 5,
+      images: document.querySelectorAll('.carousel__image'),
+      thumbnails: document.querySelectorAll('.carousel__thumb'),
+      prevBtn: document.getElementById('carousel-prev'),
+      nextBtn: document.getElementById('carousel-next'),
+      status: document.getElementById('carousel-status'),
+
+      init() {
+        this.prevBtn.addEventListener('click', () => this.prev());
+        this.nextBtn.addEventListener('click', () => this.next());
+        
+        this.thumbnails.forEach((thumb, index) => {
+          thumb.addEventListener('click', () => this.goTo(index));
+          thumb.addEventListener('keydown', (e) => this.handleThumbKeydown(e, index));
+        });
+
+        // Keyboard navigation for carousel
+        document.querySelector('.carousel__main').addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowLeft') this.prev();
+          if (e.key === 'ArrowRight') this.next();
+        });
+
+        this.updateButtons();
+      },
+
+      goTo(index) {
+        this.images[this.currentSlide].classList.remove('active');
+        this.thumbnails[this.currentSlide].setAttribute('aria-selected', 'false');
+        this.thumbnails[this.currentSlide].setAttribute('tabindex', '-1');
+
+        this.currentSlide = index;
+
+        this.images[this.currentSlide].classList.add('active');
+        this.thumbnails[this.currentSlide].setAttribute('aria-selected', 'true');
+        this.thumbnails[this.currentSlide].setAttribute('tabindex', '0');
+        this.thumbnails[this.currentSlide].focus();
+
+        this.status.textContent = `Image ${index + 1} of ${this.totalSlides}`;
+        this.updateButtons();
+      },
+
+      next() {
+        if (this.currentSlide < this.totalSlides - 1) {
+          this.goTo(this.currentSlide + 1);
+        }
+      },
+
+      prev() {
+        if (this.currentSlide > 0) {
+          this.goTo(this.currentSlide - 1);
+        }
+      },
+
+      handleThumbKeydown(e, index) {
+        let newIndex = index;
+        
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          newIndex = (index + 1) % this.totalSlides;
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          newIndex = (index - 1 + this.totalSlides) % this.totalSlides;
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          newIndex = 0;
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          newIndex = this.totalSlides - 1;
+        }
+
+        if (newIndex !== index) {
+          this.goTo(newIndex);
+        }
+      },
+
+      updateButtons() {
+        this.prevBtn.disabled = this.currentSlide === 0;
+        this.nextBtn.disabled = this.currentSlide === this.totalSlides - 1;
+      }
+    };
+
+    // ===== Quantity Picker =====
+    const quantityPicker = {
+      input: document.getElementById('quantity'),
+      decreaseBtn: document.getElementById('quantity-decrease'),
+      increaseBtn: document.getElementById('quantity-increase'),
+      totalPrice: document.getElementById('total-price'),
+      basePrice: 79.99,
+      announcements: document.getElementById('announcements'),
+
+      init() {
+        this.decreaseBtn.addEventListener('click', () => this.decrease());
+        this.increaseBtn.addEventListener('click', () => this.increase());
+        this.input.addEventListener('change', () => this.validate());
+        this.input.addEventListener('input', () => this.updatePrice());
+        this.updateButtons();
+      },
+
+      decrease() {
+        const currentValue = parseInt(this.input.value, 10);
+        if (currentValue > 1) {
+          this.input.value = currentValue - 1;
+          this.updatePrice();
+          this.updateButtons();
+          this.announce(`Quantity decreased to ${this.input.value}`);
+        }
+      },
+
+      increase() {
+        const currentValue = parseInt(this.input.value, 10);
+        if (currentValue < 10) {
+          this.input.value = currentValue + 1;
+          this.updatePrice();
+          this.updateButtons();
+          this.announce(`Quantity increased to ${this.input.value}`);
+        }
+      },
+
+      validate() {
+        let value = parseInt(this.input.value, 10);
+        if (isNaN(value) || value < 1) value = 1;
+        if (value > 10) value = 10;
+        this.input.value = value;
+        this.updatePrice();
+        this.updateButtons();
+      },
+
+      updatePrice() {
+        const quantity = parseInt(this.input.value, 10) || 1;
+        const total = (this.basePrice * quantity).toFixed(2);
+        this.totalPrice.textContent = `$${total}`;
+      },
+
+      updateButtons() {
+        const value = parseInt(this.input.value, 10);
+        this.decreaseBtn.disabled = value <= 1;
+        this.increaseBtn.disabled = value >= 10;
+      },
+
+      announce(message) {
+        this.announcements.textContent = message;
+        setTimeout(() => {
+          this.announcements.textContent = '';
+        }, 1000);
+      }
+    };
+
+    // ===== Accordion =====
+    const accordion = {
+      triggers: document.querySelectorAll('.accordion__trigger'),
+
+      init() {
+        this.triggers.forEach(trigger => {
+          trigger.addEventListener('click', () => this.toggle(trigger));
+        });
+      },
+
+      toggle(trigger) {
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+        const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+
+        trigger.setAttribute('aria-expanded', !isExpanded);
+        panel.hidden = isExpanded;
+      }
+    };
+
+    // ===== Form Validation =====
+    const form = {
+      element: document.getElementById('inquiry-form'),
+      announcements: document.getElementById('announcements'),
+
+      init() {
+        this.element.addEventListener('submit', (e) => this.handleSubmit(e));
+
+        // Real-time validation on blur
+        const requiredFields = this.element.querySelectorAll('[required]');
+        requiredFields.forEach(field => {
+          field.addEventListener('blur', () => this.validateField(field));
+        });
+      },
+
+      handleSubmit(e) {
+        e.preventDefault();
+        
+        const requiredFields = this.element.querySelectorAll('[required]');
+        let isValid = true;
+        let firstError = null;
+
+        requiredFields.forEach(field => {
+          if (!this.validateField(field)) {
+            isValid = false;
+            if (!firstError) firstError = field;
+          }
+        });
+
+        if (isValid) {
+          this.announcements.textContent = 'Form submitted successfully! We will be in touch soon.';
+          // In production, this would submit to a server
+          alert('Thank you for your inquiry! Our floral designers will contact you within 24 hours.');
+          this.element.reset();
+        } else {
+          firstError.focus();
+          this.announcements.textContent = 'Please correct the errors in the form.';
+        }
+      },
+
+      validateField(field) {
+        const errorElement = document.getElementById(`${field.id}-error`);
+        let isValid = true;
+
+        if (field.required && !field.value.trim()) {
+          isValid = false;
+        }
+
+        if (field.type === 'email' && field.value) {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          isValid = emailRegex.test(field.value);
+        }
+
+        if (field.type === 'checkbox' && field.required) {
+          isValid = field.checked;
+        }
+
+        if (errorElement) {
+          errorElement.hidden = isValid;
+          field.setAttribute('aria-invalid', !isValid);
+          field.closest('.form__field, .form__checkbox-group')?.classList.toggle('form__field--error', !isValid);
+        }
+
+        return isValid;
+      }
+    };
+
+    // ===== Add to Cart Button =====
+    const addToCartBtn = document.getElementById('add-to-cart');
+    const addToWishlistBtn = document.getElementById('add-to-wishlist');
+    const announcements = document.getElementById('announcements');
+
+    addToCartBtn.addEventListener('click', () => {
+      const quantity = document.getElementById('quantity').value;
+      announcements.textContent = `${quantity} Valentine's Rose Bouquet${quantity > 1 ? 's' : ''} added to cart.`;
+      addToCartBtn.textContent = 'Added to Cart!';
+      setTimeout(() => {
+        addToCartBtn.innerHTML = `
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          Add to Cart
+        `;
+      }, 2000);
+    });
+
+    addToWishlistBtn.addEventListener('click', () => {
+      announcements.textContent = 'Valentine\'s Rose Bouquet added to wishlist.';
+      addToWishlistBtn.innerHTML = `
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        Added to Wishlist
+      `;
+    });
+
+    // ===== Initialize All Components =====
+    document.addEventListener('DOMContentLoaded', () => {
+      carousel.init();
+      quantityPicker.init();
+      accordion.init();
+      form.init();
+    });
+  </script>
+</body>
+</html>
